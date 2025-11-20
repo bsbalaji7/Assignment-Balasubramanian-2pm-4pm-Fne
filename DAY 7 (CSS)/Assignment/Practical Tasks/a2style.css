@@ -1,0 +1,65 @@
+.i1{
+    border: red solid;
+}
+.i2{
+    border: rgb(255, 0, 179) solid;
+}
+.i3{
+    border: rgb(17, 255, 0) solid;
+}
+.i4{
+    border: rgb(0, 145, 255) solid;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+ }
+
+.buy {
+    background: green;
+    color: white;
+    cursor: pointer;
+}
+
+.info {
+    background: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.product {
+    border: 1px solid black;
+    padding: 10px;
+    width: 150px;
+    margin: 10px;
+}
+#header {
+    background: darkblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#menu {
+    background: lightgray;
+    padding: 10px;
+}
+
+#menu a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+#content {
+    padding: 20px;
+}
+
+#footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
