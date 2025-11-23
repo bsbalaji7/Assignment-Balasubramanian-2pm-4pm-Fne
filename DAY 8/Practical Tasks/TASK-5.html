@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Apply border-box to ALL elements */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .box {
+            width: 200px;              /* Final size remains 200px */
+            padding: 20px;             /* Space inside */
+            border: 3px solid #333;    /* Border included in the 200px */
+            background: white;
+            text-align: center;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+</div>
+
+</body>
+</html>
