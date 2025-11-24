@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Layout</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: sans-serif;
+        }
+
+        /* Chat Container */
+        .chat-window {
+            flex: 1;
+            display: flex;
+            flex-direction: column-reverse;   /* ✅ Stack bottom-to-top */
+            overflow-y: auto;                 /* ✅ Scrolls correctly */
+            padding: 20px;
+            background: #f1f1f1;
+            gap: 10px;
+        }
+
+        /* Messages */
+        .message {
+            max-width: 70%;
+            padding: 10px 15px;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .me {
+            align-self: flex-end;
+            background: #d6e6ff;
+        }
+
+        /* Input Bar */
+        .input-bar {
+            display: flex;
+            padding: 10px;
+            background: #fff;
+            border-top: 1px solid #ccc;
+        }
+
+        .input-bar input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .input-bar button {
+            padding: 10px 16px;
+            margin-left: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chat-window">
+        <div class="message">Hello!</div>
+        <div class="message me">Hi there!</div>
+        <div class="message">How are you?</div>
+    </div>
+
+    <div class="input-bar">
+        <input type="text" placeholder="Type a message...">
+        <button>Send</button>
+    </div>
+
+</body>
+</html>

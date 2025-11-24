@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Toolbar</title>
+    <style>
+        .toolbar {
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            background: #f5f5f5;
+            gap: 20px; /* Space between groups */
+        }
+
+        /* Filter group stays on the left (first in DOM) */
+        .filters select {
+            padding: 6px;
+        }
+
+        /* Search centered using flex-grow */
+        .search {
+            flex: 1; /* Takes remaining space */
+            display: flex;
+            justify-content: center;
+        }
+
+        .search input {
+            width: 60%;
+            padding: 8px;
+            font-size: 15px;
+        }
+
+        /* Actions pushed to the right */
+        .actions {
+            margin-left: auto;  /* ✅ Push this group to the right */
+            display: flex;
+            gap: 10px;
+        }
+
+        .actions button {
+            padding: 8px 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="toolbar">
+
+        <!-- Left: Filters -->
+        <div class="filters">
+            <select>
+                <option>Status</option>
+                <option>Active</option>
+                <option>Archived</option>
+            </select>
+        </div>
+
+        <!-- Center: Search -->
+        <div class="search">
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <!-- Right: Action Group -->
+        <div class="actions">
+            <button>Add</button>
+            <button>Export</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

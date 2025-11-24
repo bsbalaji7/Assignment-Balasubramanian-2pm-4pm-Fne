@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Toolbar</title>
+    <style>
+        .toolbar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background: #eee;
+        }
+
+        /* Push left button to start */
+        .toolbar button:first-child {
+            margin-right: auto;
+        }
+
+        /* Push right button to end */
+        .toolbar button:last-child {
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="toolbar">
+        <button>Left</button>
+        <button>Center</button>
+        <button>Right</button>
+    </div>
+
+</body>
+</html>

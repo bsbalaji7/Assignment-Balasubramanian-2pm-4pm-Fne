@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Centered Vertical Stack</title>
+    <style>
+        .container {
+            height: 100vh;               /* Full viewport height */
+            display: flex;
+            flex-direction: column;      /* Stack items vertically */
+            justify-content: center;     /* Center vertically */
+            align-items: center;         /* Center horizontally */
+            gap: 15px;                   /* Space between blocks */
+            background: #f5f5f5;
+        }
+
+        .box {
+            background: lightblue;
+            padding: 20px 40px;
+            border-radius: 6px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">Block 1</div>
+        <div class="box">Block 2</div>
+        <div class="box">Block 3</div>
+    </div>
+
+</body>
+</html>

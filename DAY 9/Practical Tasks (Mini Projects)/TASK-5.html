@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Strip</title>
+    <style>
+        .photo-strip {
+            display: flex;
+            align-items: center;     /* ✅ Vertically center images */
+            gap: 15px;               /* Space between photos */
+            padding: 20px;
+            height: 200px;           /* Strip height */
+            overflow-x: auto;        /* ✅ Scroll on small screens */
+            background: #fafafa;
+        }
+
+        .photo-strip img {
+            height: 100%;            /* Fill strip height */
+            width: auto;             /* Keep aspect ratio */
+            object-fit: cover;       /* ✅ Crops nicely without distortion */
+            border-radius: 6px;
+        }
+
+        /* ✅ Responsive: shorter strip on small screens */
+        @media (max-width: 600px) {
+            .photo-strip {
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="photo-strip">
+        <img src="https://i.pinimg.com/736x/9c/6d/cb/9c6dcb76e9c6ab1e90d54f2036dda931.jpg" alt="Photo 1">
+        <img src="https://play-lh.googleusercontent.com/eXwG6AMiJ9l3RATkxdHpRiOA8nh4lTQr92DuTKkFZOxoX_KrAJT-YRBZ_R5D9IHYPic=w526-h296-rw" alt="Photo 2">
+        <img src="https://preview.redd.it/leo-and-its-future-v0-c7he6i0wmczd1.jpeg?auto=webp&s=6c453120dce6636826fc4ca9204609c9a0bc474e" alt="Photo 3">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/eb92da174113613.649c1d1437220.jpg" alt="Photo 4">
+    </div>
+
+</body>
+</html>
