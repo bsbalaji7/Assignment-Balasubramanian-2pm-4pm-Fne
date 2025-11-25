@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Format Boxes</title>
+
+<style>
+    .container {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .box {
+        width: 120px;
+        height: 120px;
+        border-radius: 8px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Different color formats */
+    .hex-box {
+        background-color: #3498db; /* HEX */
+    }
+
+    .rgb-box {
+        background-color: rgb(231, 76, 60); /* RGB */
+    }
+
+    .hsl-box {
+        background-color: hsl(140, 60%, 40%); /* HSL */
+    }
+
+    .rgba-box {
+        background-color: rgba(155, 89, 182, 0.8); /* RGBA */
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="box hex-box">HEX</div>
+    <div class="box rgb-box">RGB</div>
+    <div class="box hsl-box">HSL</div>
+    <div class="box rgba-box">RGBA</div>
+</div>
+
+</body>
+</html>

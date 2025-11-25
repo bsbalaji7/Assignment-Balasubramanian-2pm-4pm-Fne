@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banner with Gradient Overlay</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .banner {
+        height: 300px;
+        width: 100%;
+        background-image:
+            linear-gradient(rgba(8, 103, 235, 0.29), rgba(201, 18, 238, 0.274)),  /* Gradient overlay */
+            url("https://images.unsplash.com/photo-1503264116251-35a269479413"); /* Background image */
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .banner h1 {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .banner p {
+        font-size: 1.1rem;
+        margin-top: 10px;
+        opacity: 0.9;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="banner">
+    <div>
+        <h1>Welcome to Our Website</h1>
+        <p>Beautiful banner with gradient overlay and background image</p>
+    </div>
+</div>
+
+</body>
+</html>
