@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grid Layout</title>
+
+<style>
+  body {
+    margin: 0;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+    grid-template-columns: 200px 1fr; /* sidebar | main area */
+    grid-template-rows: 60px 1fr 50px;
+    height: 100vh; /* full page */
+  }
+
+  header { grid-area: header; background: #333; color: #fff; padding: 15px; }
+  aside  { grid-area: sidebar; background: #929292; padding: 15px; }
+  main   { grid-area: content; background: #d2d0d0; padding: 15px; }
+  footer { grid-area: footer; background: #333; color: #fff; padding: 15px; text-align: center; }
+</style>
+</head>
+
+<body>
+
+<div class="layout">
+  <header>Header</header>
+  <aside>Sidebar</aside>
+  <main>Main Content</main>
+  <footer>Footer</footer>
+</div>
+
+</body>
+</html>

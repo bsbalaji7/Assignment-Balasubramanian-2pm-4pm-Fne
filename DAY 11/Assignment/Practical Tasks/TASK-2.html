@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Card List - Float Layout</title>
+  <style>
+    /* Clearfix hack */
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .product-list {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 20px auto;
+      max-width: 900px;
+      background-color: lightblue;
+    }
+
+
+    .product-card {
+      background-color: lightcoral;
+      float: left;              /* legacy layout: float columns */
+      width: 30%;               /* 3 cards per row approx */
+      margin: 1.5%;
+      border: 1px solid #ddd;
+      padding: 10px;
+      box-sizing: border-box;   /* include padding in width */
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .product-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      color: green;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="product-list clearfix">
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQTekxd_l5XD7Th0BgsUY3H_CtjVyGvr86SU2DJPuUyQ8zCSq6FXdsu7it72G5LN-aErpP4195g0ka89bVlA7pDJPFDQwQ5oiLLOXUT5t-WxFiFLUHBR-jiXA" alt="Product 1">
+      <div class="product-title">Product 1</div>
+      <div class="price">$19.99</div>
+      <p>Short description of product 1.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSHYvCVRYLaSlPgpIK3XX-Ud7u-uBU6YDskVUuk9It2XIL-scKihdL4n2UjD_n4geoWPaeFYbyMYcE0vQ5PBAJ7A7WCf3VsS7UQuGbZK4p1X9CY1sJidECZtw" alt="Product 2">
+      <div class="product-title">Product 2</div>
+      <div class="price">$24.99</div>
+      <p>Short description of product 2.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQQmBQj9GcrL-PHDBY0v8x-x6bD7qYpp5GnWueClzDhtQ-5BSkTSJsYRE4nVCTeRFe3tCIxPhmSvE6pLzMH8g-IwMZNX2OvtGFEp67SWsmT" alt="Product 3">
+      <div class="product-title">Product 3</div>
+      <div class="price">$29.99</div>
+      <p>Short description of product 3.</p>
+    </div>
+  </div>
+
+</body>
+</html>
+
+</body>
+</html>

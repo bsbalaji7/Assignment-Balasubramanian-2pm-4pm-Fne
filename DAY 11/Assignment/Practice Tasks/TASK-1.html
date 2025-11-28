@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Block + Inline Example</title>
+<style>
+  .full-width {
+    display: block;         /* block so it takes full width */
+    background: #444;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  .highlight {
+    display: inline;        /* stays inline beside text */
+    background: yellow;
+    padding: 2px 5px;
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="full-width">
+    I am a block element — I stretch across the full width of the page.
+  </div>
+
+  <p>
+    Here is some text and an 
+    <span class="highlight">inline element</span>
+    sitting beside it naturally.
+  </p>
+
+</body>
+</html>
