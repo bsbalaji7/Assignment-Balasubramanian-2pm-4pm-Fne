@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Strip (Grid)</title>
+
+<style>
+  body {
+    margin: 0;
+    padding: 30px;
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Photo strip using CSS Grid */
+  .photo-row {
+    display: grid;
+    grid-auto-flow: column;   /* place items left → right */
+    grid-auto-columns: max-content;
+    align-items: center;      /* vertically center images */
+    gap: 12px;                /* spacing */
+    overflow: auto;         /* scroll if needed */
+    padding-bottom: 10px;
+  }
+
+  /* Images */
+  .photo-row img {
+    height: 120px;           /* uniform height */
+    width: auto;             /* maintain aspect ratio */
+    border-radius: 8px;
+  }
+
+  /* Responsive: reduce height on small screens */
+  @media (max-width: 600px) {
+    .photo-row img {
+      height: 90px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<h2>Responsive Photo Strip (Grid)</h2>
+
+<div class="photo-row">
+  <img src="https://picsum.photos/id/1015/400/300" alt="">
+  <img src="https://picsum.photos/id/1025/400/300" alt="">
+  <img src="https://picsum.photos/id/1035/400/300" alt="">
+  <img src="https://picsum.photos/id/1045/400/300" alt="">
+  <img src="https://picsum.photos/id/1055/400/300" alt="">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>min-width</title>
+  <style>
+    .container{
+      display: flex;
+      height: 100px;
+      width: 300px;
+    }
+    .box{
+      background-color: aquamarine;
+      height: 100px;
+      min-width: 80px;
+    }
+    .overflow{
+    background: #cde;
+    min-width: 0;
+    overflow-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="overflow">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti harum perspiciatis animi incidunt, quas soluta tenetur perferendis commodi odit eos.
+        </div>
+    </div>
+</body>
+</html>

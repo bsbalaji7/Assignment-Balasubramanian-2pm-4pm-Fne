@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Price</title>
+  <style>
+    .card-con{
+      display: flex;
+      background-color: bisque;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      height: 800px;
+
+    }
+    .cards{
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      height: 350px;
+      width: 400px;
+      border: 3px solid black;
+      align-items: center;
+      justify-content: center;
+    }
+    .cards h3{
+      font-size: 50px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .cards p{
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .btn{
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      padding: 20px;
+      padding-right: 50px;
+      padding-left: 50px;
+      background-color: lightseagreen;
+      color: white;
+    }
+    .btn:hover{
+      background-color: rgba(32, 178, 171, 0.714);
+    }
+    @media screen and (max-width:768px){
+      .card-con{
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+    <main>
+        <div class="card-con">
+          <div class="cards">
+            <h3>Basic</h3>
+            <p>$20/month</p>
+            <button class="btn">Continue</button>
+          </div>
+          <!-- card 2 -->
+          <div class="cards">
+            <h3>Pro</h3>
+            <p>$200/month</p>
+            <button class="btn">Continue</button>
+          </div>
+          <!-- card 3 -->
+          <div class="cards">
+            <h3>Premium</h3>
+            <p>$2000/month</p>
+            <button class="btn">Continue</button>
+          </div>
+        </div>
+    </main>
+</body>
+</html>
