@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SLA Grid</title>
+  <style>
+   
+    
+    .grid-con{
+      gap: 20px;
+      display: grid;
+      padding: 20px;
+      border: solid 1px black;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 70px 70px 250px;
+
+      grid-template-areas: 
+      "aside topbar topbar topbar topbar "
+      "aside sarea sarea sarea sarea"
+      "aside main main main main"
+      "aside main main main main"
+      "aside main main main main";
+      
+      height: 100vh;
+      
+    }
+    .aside{
+      border-right: 1px solid black;
+      background-color: rgb(255, 255, 255);
+      grid-area: aside;
+      
+    }
+    .topbar{
+      max-height: 30px;
+      background-color: rgb(255, 255, 255);
+      grid-area: topbar;
+    }
+    .topbar h1{
+      box-shadow: 5px 5px 5px;
+    }
+    .st-area{
+      background-color: rgb(255, 255, 255);
+      grid-area: sarea;
+    }
+    .st-area h1{
+      box-shadow: 5px 5px 5px;
+    }
+    .main-con{
+      background-color: rgb(255, 255, 255);
+      grid-area: main;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-con">
+    <div class="aside">
+      <h1 style="background-color: rgb(13, 168, 235); color: aliceblue;max-width: 60px;">SLA</h1>
+      <h3>SLAKKNFE111125</h3>
+      <p>DAY 1</p>
+      <p>DAY 2</p>
+      <p>DAY 3</p>
+      <p>DAY 4</p>
+      <p>DAY 5</p>
+    </div>
+    <div class="topbar">
+      <h1>Assignment : Day 13 - CSS Grid Layout</h1>
+    </div>
+    <div class="st-area">
+      <h1>Mini-Projects (Practical)</h1>
+    </div>
+    <div class="main-con">
+      <ol>
+        <li>Build a Photo Gallery using responsive minmax() + auto-fill.</li>
+
+        <li>Create a Landing Page Layout using template areas (header, left, right, footer).</li>
+
+        <li>Make a Product Grid with flexible columns and equal spacing.</li>
+
+        <li>Create a Dashboard Layout with sidebar + topbar + stats area + main content.</li>
+
+        <li>Design a Services Section with 3 or 4 cards using grid.</li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>

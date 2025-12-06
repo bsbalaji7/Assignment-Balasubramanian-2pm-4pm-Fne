@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services Section</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+    background: #f4f4f4;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  /* Services Grid */
+  .services {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  /* Card Style */
+  .service-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  }
+
+  .service-card i {
+    font-size: 40px;
+    color: #4a90e2;
+    margin-bottom: 15px;
+  }
+
+  .service-card h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .service-card p {
+    color: #555;
+  }
+</style>
+
+</head>
+<body>
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+  <div class="service-card">
+    <i>💻</i>
+    <h3>Web Development</h3>
+    <p>Create responsive and modern websites using latest technologies.</p>
+  </div>
+
+  <div class="service-card">
+    <i>📱</i>
+    <h3>App Development</h3>
+    <p>Build fast and user-friendly mobile apps for Android and iOS.</p>
+  </div>
+
+  <div class="service-card">
+    <i>🎨</i>
+    <h3>UI/UX Design</h3>
+    <p>Beautiful and intuitive designs that enhance user experience.</p>
+  </div>
+
+  <div class="service-card">
+    <i>🛒</i>
+    <h3>E-commerce Solutions</h3>
+    <p>Complete online store setup with payment and cart features.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
