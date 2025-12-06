@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      padding: 20px;
+      text-align: center;
+    }
+    .container h1{
+      font-size: 3rem;
+      text-decoration: underline;
+    }
+    .grid-con{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      padding: 20px;
+      gap: 20px;
+    }
+    .parthi{
+      box-shadow: 0px 05px 5px;
+    }
+    .leo{
+      box-shadow: 0px 05px 5px;
+    }
+    .master{
+      box-shadow: 0px 05px 5px;
+    }
+    .container button{
+      margin: 10px;
+      padding: 10px 20px 10px 20px;
+      color: whitesmoke;
+      background-color: rgb(73, 162, 245);
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    @media screen and (max-width:800px) {
+      .grid-con{
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+     @media screen and (max-width:500px) {
+      .grid-con{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FAV VIJAY ROLE</h1>
+    <div class="grid-con">
+      <div class="parthi">
+        <h3>PARTHIBAN</h3>
+        <p>In the movie Leo, Parthiban is the central character played by Vijay, a seemingly simple café owner in Himachal Pradesh who is forced to reveal his violent past as the feared gangster Leo Das when a drug cartel targets him, believing he's their old boss.</p>
+        <button>OK</button>
+      </div>
+      <div class="leo">
+        <h3>LEO</h3>
+        <p>In 1999, after Harold returns to India upon completing his education in Canada, he begins manufacturing and selling a stimulant drug named Datura, using Antony's failing tobacco factory Das & Co as a front organization.</p>
+        <button>OK</button>
+      </div>
+      <div class="master">
+        <h3>JD</h3>
+        <p>J.D. (John Durairaj), played by Vijay, is a beloved but alcoholic college professor who gets forced to teach at a juvenile detention center, exploiting the kids for crime, leading to a thrilling showdown as he transforms from a reckless drunk into a hero, fighting to save the youth</p>
+        <button>OK</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

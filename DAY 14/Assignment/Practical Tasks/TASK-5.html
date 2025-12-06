@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>auto-fill minmax</title>
+  <style>
+    .container{
+      height: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+      gap: 20px;
+    }
+    .container img{ 
+      width: 90%;
+      height: 80%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+    .pro-card{
+      border-radius: 30px;
+      box-shadow: 10px 10px 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgb(82, 81, 81);
+    }
+    .pro-card h3{
+      font-size: 30px;
+    }
+    .pro-card h4{
+      color: rgb(141, 139, 139);
+    }
+    .btn{
+      letter-spacing: 1px;
+      background-color: rgb(50, 169, 208);
+      color: aliceblue;
+      font-size: 15px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      padding: 10px 20px 10px 20px;
+      border-radius: 20px;
+    }
+    .btn:hover{
+      background-color:rgb(41, 142, 176) ;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div class="pro-card">
+    <img src="https://finebuy.co.in/wp-content/uploads/2025/09/rolex-10.webp" alt="rolex">
+    <h3>$39.99</h3>
+    <h4>Nala product Dhn</h4>
+    <p>Rolex Watch</p>
+    <button class="btn">Add to Cart</button>
+  </div>
+
+
+  <!-- card-2 -->
+  <div class="pro-card">
+    <img src="https://finebuy.co.in/wp-content/uploads/2025/09/rolex-10.webp" alt="rolex">
+    <h3>$49.99</h3>
+    <h4>Nala product Dhn</h4>
+    <p>Rolex Watch</p>
+    <button class="btn">Add to Cart</button>
+  </div>
+
+
+  <!-- card-3 -->
+  <div class="pro-card">
+    <img src="https://finebuy.co.in/wp-content/uploads/2025/09/rolex-10.webp" alt="rolex">
+    <h3>$59.99</h3>
+    <h4>Nala product Dhn</h4>
+    <p>Rolex Watch</p>
+    <button class="btn">Add to Cart</button>
+  </div>
+
+
+  <!-- card-4 -->
+  <div class="pro-card">
+    <img src="https://finebuy.co.in/wp-content/uploads/2025/09/rolex-10.webp" alt="rolex">
+    <h3>$679.99</h3>
+    <h4>Nala product Dhn</h4>
+    <p>Rolex Watch</p>
+    <button class="btn">Add to Cart</button>
+  </div>
+</div>
+
+</body>
+</html>

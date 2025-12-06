@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    footer{
+      background-color: gray;
+    }
+    .container{
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(3,1fr);
+    }
+    .clm{
+      font-size: 2rem;
+    }
+    .clm ol{
+      list-style-type: none;
+    }
+    .clm ol a{
+      color: whitesmoke;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    @media screen and (max-width:800px) {
+      .container{
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+     @media screen and (max-width:500px) {
+      .container{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    See Footer (Scroll-down)
+  </main>
+  <footer>
+    <div class="container">
+      <div class="clm">
+        <ol>
+          <li><a href="#">no 1</a></li>
+          <li><a href="#">no 2</a></li>
+          <li><a href="#">no 3</a></li>
+        </ol>
+      </div>
+
+      <div class="clm">
+        <ol>
+          <li><a href="#">no 1</a></li>
+          <li><a href="#">no 2</a></li>
+          <li><a href="#">no 3</a></li>
+        </ol>
+      </div>
+
+      <div class="clm">
+        <ol>
+          <li><a href="#">no 1</a></li>
+          <li><a href="#">no 2</a></li>
+          <li><a href="#">no 3</a></li>
+        </ol>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

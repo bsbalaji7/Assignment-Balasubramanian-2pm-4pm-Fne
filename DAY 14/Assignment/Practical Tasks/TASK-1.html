@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Portfolio</title>
+    <style>
+      main{
+    background-color: black;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    align-items: center;
+}
+.name-con-left{
+    display: flex;
+    flex-direction: column;
+    font-family: "gued";
+    font-size: 100px;font-weight: bolder;
+    left: 20px;
+    background: linear-gradient(to left, black,gray);
+    color: transparent;
+    -webkit-background-clip: text;
+
+}
+.img-leo-center{
+    display: flex;
+    justify-content: center;
+    max-width: 510px;
+    
+}
+.yr-exp-right{
+    font-family: "gued";
+    right: 20px ;
+    font-size: 40px;
+    font-weight: bolder;
+    background: linear-gradient(to left, black,gray);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+@media screen and (max-width:1078px) and (orientation: portrait) {
+    .yr-exp-right{
+        display: none;
+    }
+    .img-leo-center img{
+        display: block;
+        width: 350px;
+        height: 350px;
+    }
+    
+}
+@media screen and (max-width:505px) {
+    .yr-exp-right{
+        display: none;
+    }
+    .img-leo-center img{
+        width: 165px;
+        height: 165px;
+    }
+    .name-con-left{
+        font-size: 50px;
+    }
+    .container{
+        display: block;
+    }
+
+}
+
+    </style>
+
+</head>
+<body>
+     <main>
+        <div class="container" >
+            <div class="name-con-left">
+                <p style="font-size: 60px;">Hi There,</p>
+                <p>Leo Das</p>
+            </div>
+                <div class="img-leo-center">
+                <img src="assets/images/leo-vijay-in.jpg" alt="leo img">
+            </div>
+            <div class="yr-exp-right">
+                <p>Full Stack <br> Developer</p>
+                <p style="font-size: 80px;">69</p>
+                <p>+ Projects</p>
+            </div>
+
+        </div>
+     </main>
+</body>
+</html>
