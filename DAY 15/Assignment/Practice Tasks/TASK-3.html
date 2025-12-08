@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>2 to 1 Column Layout</title>
+
+<style>
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .box {
+    background: lightcoral;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  /* At 768px and below → convert to 1 column */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="box">Column 1 Content</div>
+  <div class="box">Column 2 Content</div>
+</div>
+
+</body>
+</html>

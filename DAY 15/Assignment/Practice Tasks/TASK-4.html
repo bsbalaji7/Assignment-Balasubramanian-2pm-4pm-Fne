@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Responsive Image</title>
+
+<style>
+  img {
+    width: 400px;            /* normal size on desktop */
+    border-radius: 10px;
+  }
+
+  /* On small screens → full width */
+  @media (max-width: 600px) {
+    img {
+      width: 100%;
+      height: auto;          /* keeps correct proportions */
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<img src="https://via.placeholder.com/600x300" alt="Sample Image">
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Services Section</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fafafa;
+  }
+
+  .services {
+    padding: 60px 10%;
+    text-align: center;
+  }
+
+  .services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  /* GRID OF CARDS */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  /* CARD STYLE */
+  .card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+  .card p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* RESPONSIVE BREAKPOINTS */
+  @media (max-width: 900px) {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+
+    .services h2 {
+      font-size: 28px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<section class="services">
+  <h2>Our Services</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Service One</h3>
+      <p>We provide high-quality solutions tailored to your business needs.</p>
+    </div>
+
+    <div class="card">
+      <h3>Service Two</h3>
+      <p>We focus on delivering efficient, scalable, and modern designs.</p>
+    </div>
+
+    <div class="card">
+      <h3>Service Three</h3>
+      <p>Our support team ensures smooth operation at every step.</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
