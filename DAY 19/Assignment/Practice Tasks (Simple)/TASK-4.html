@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Click to check the Time working</h1>
+    <button onclick="msgout()">Click here</button>
+
+    <script>
+        function showMsg() {
+            console.log("this msg show after 5sec")
+            alert("This works After 5 Sec")
+        }
+
+        function msgout(){
+            console.log("worked");
+            setTimeout(showMsg,5000)
+            
+        }
+    </script>
+</body>
+</html>
