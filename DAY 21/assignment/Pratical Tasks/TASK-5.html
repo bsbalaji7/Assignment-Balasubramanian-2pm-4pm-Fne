@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product List</title>
+</head>
+<body>
+
+<h2>Product Names</h2>
+<ul id="productList"></ul>
+
+<script>
+    // Array of products
+    let products = ["Laptop", "Mobile", "Headphones", "Keyboard", "Mouse"];
+
+    // Get UL element
+    let list = document.getElementById("productList");
+
+    // Display products using forEach()
+    products.forEach(function(product) {
+        let li = document.createElement("li");
+        li.textContent = product;
+        list.appendChild(li);
+    });
+</script>
+
+</body>
+</html>
