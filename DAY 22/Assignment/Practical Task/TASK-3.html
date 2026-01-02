@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<input type="text" id="input">
+<button onclick="AddItem()">ADD</button>
+<button onclick="RemoveItem()">REMOVE</button>
+
+<ul id="list"></ul>
+
+<script>
+function AddItem(){
+    const list = document.getElementById("list");
+    const item = document.createElement("li");
+
+    item.textContent = document.getElementById("input").value;
+    list.appendChild(item);
+
+    document.getElementById("input").value = "";
+}
+
+function RemoveItem(){
+    const list = document.getElementById("list");
+
+    if(list.lastChild){
+        list.removeChild(list.lastChild);
+    }
+}
+</script>
+
+</body>
+</html>
