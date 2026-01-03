@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box" style="width: 100px; height: 100px; background-color: antiquewhite;">
+            BOX
+        </div>
+        <button id="btn">click</button>
+
+
+
+    <script>
+        const box = document.getElementById("box")
+
+        box.addEventListener("mouseover",() => {
+            box.style.background="blue";
+        })
+
+        box.addEventListener("mouseout",() => {
+            box.style.background="green"
+        })
+
+        document.getElementById("btn").addEventListener("click",function(){
+            const box = document.getElementById("box").style.background="orange"
+        })
+        document.getElementById("btn").addEventListener("dblclick",function(){
+            const box = document.getElementById("box").style.background="gray"
+        })
+    </script>
+</body>
+</html>

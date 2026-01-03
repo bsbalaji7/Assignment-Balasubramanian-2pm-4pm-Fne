@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <input type="text" id="name" placeholder="Enter your name"> <br><br>
+        <input type="email" id="Email" placeholder="Enter your Email"><br><br>
+        <button type="submit">submit</button>
+    </form>
+    
+    <p id="error" style="color: red;"></p>
+    <p id="success" style="color: green;"></p>
+
+
+    <script>
+        document.getElementById("form").addEventListener("submit",function(event){
+            event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("Email").value;
+
+        if (name ==="" || email ===""){
+            document.getElementById("error").innerText = "ALL THE FIELD SHOULD BE FILLED!!!"
+            document.getElementById("success").innerText = ""
+        } else {
+            document.getElementById("error").innerText = "";
+            document.getElementById("success").innerText = "FORM SUBMITTED SUCCESSFULLY!!!";
+        }
+        })
+
+    </script>
+
+</body>
+</html>

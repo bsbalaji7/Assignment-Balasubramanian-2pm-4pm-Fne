@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <p id="p"></p>
+
+    <script>
+        document.getElementById("input").addEventListener("input",function() {
+            document.getElementById("p").innerHTML = this.value;
+        })
+    </script>
+</body>
+</html>

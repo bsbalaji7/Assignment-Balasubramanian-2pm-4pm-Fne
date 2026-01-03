@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" placeholder="Enter the Name"><br> <br>
+    <input type="email" id="email" placeholder="Enter the Email">
+
+    <p id="pname">Name: </p>
+    <p id="pemail">Email: </p>
+
+    <script>
+        document.getElementById("name").addEventListener("input",function(){
+            document.getElementById("pname").innerText = "Name: "+ this.value;
+        })
+
+        document.getElementById("email").addEventListener("change",function(){
+            document.getElementById("pemail").innerText = "Email "+ this.value;
+        })
+    </script>
+</body>
+</html>

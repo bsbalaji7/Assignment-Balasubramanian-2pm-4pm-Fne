@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Document</title>
+<style>
+  .parent {
+    padding: 40px;
+    background: lightblue;
+  }
+  .child {
+    padding: 40px;
+    background: lightcoral;
+  }
+</style>
+</head>
+
+    <body>
+
+        <div id="parent" class="parent">
+            Parent
+
+            <div id="child" class="child">
+            Child
+            </div>
+        </div>
+
+
+        <script>
+            document.getElementById("parent").addEventListener("click",function(){
+                alert("Parent clicked (Bubbling)")
+            })
+            document.getElementById("child").addEventListener("click",function(){
+                alert("Child clicked (Bubbling)")
+            })
+
+
+            document.getElementById("parent").addEventListener("click",function(){
+                alert("Parent clicked (Capturing)")
+            },true)
+            document.getElementById("child").addEventListener("click",function(){
+                alert("Child clicked (Capturing)")
+            },true)
+        </script>
+
+    </body>
+</html>

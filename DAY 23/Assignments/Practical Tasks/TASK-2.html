@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Keyboard Tracker</title>
+</head>
+
+<body>
+
+<h2>Press any key</h2>
+<p id="keyName">Key: </p>
+<p id="keyCode">Key Code: </p>
+
+<script>
+    document.addEventListener("keydown",function(event){
+        document.getElementById("keyName").innerText = "Key :" + event.key;
+
+        document.getElementById("keyCode").innerText = "Key Code : " + event.keyCode;
+    })
+</script>
+
+</body>
+</html>
