@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Document</title>
+</head>
+<body>
+
+<input id="n1" placeholder="Number 1">
+<input id="n2" placeholder="Number 2">
+
+<button onclick="cal('+')">+</button>
+<button onclick="cal('-')">-</button>
+<button onclick="cal('*')">*</button>
+<button onclick="cal('/')">/</button>
+
+<p id="output"></p>
+
+<script>
+function cal(operation) {
+
+    let a = document.getElementById("n1").value;
+    let b = document.getElementById("n2").value;
+    let output = document.getElementById("output");
+
+    if (a === "" || b === "") {
+        output.innerText = "Both numbers should be entered";
+        return;
+    }
+
+    a = Number(a);
+    b = Number(b);
+
+    if (isNaN(a) || isNaN(b)) {
+        output.innerText = "Only numbers allowed!";
+        return;
+    }
+
+    if (operation === "/" && b === 0) {
+        output.innerText = "Cannot divide by zero";
+        return;
+    }
+
+    let result;
+
+    switch (operation) {
+        case "+":
+            result = a + b;
+            break;
+        case "-":
+            result = a - b;
+            break;
+        case "*":
+            result = a * b;
+            break;
+        case "/":
+            result = a / b;
+            break;
+    }
+
+    output.innerText = "Result: " + result;
+}
+</script>
+
+</body>
+</html>

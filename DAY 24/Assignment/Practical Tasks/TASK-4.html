@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .error{
+    color: red;
+    font-size: 14px;
+}
+
+  </style>
+</head>
+<body>
+  <form id="myForm">
+    <input type="text" id="name" placeholder="Enter Name">
+    <span id="nError" class="error"></span><br><br>
+
+    <input type="email" id="email" placeholder="Enter Email">
+    <span id="eError" class="error"></span><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+<script>
+document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+
+    document.getElementById("nError").innerText = "";
+    document.getElementById("eError").innerText = "";
+
+    let isValid = true;
+
+    if (name === "") {
+        document.getElementById("nError").innerText = "Name should be entered";
+        isValid = false;
+    }
+
+    if (email === "") {
+        document.getElementById("eError").innerText = "Email should be entered";
+        isValid = false;
+    }
+
+    if (isValid) {
+        alert("Form is successfully submitted");
+    }
+});
+</script>
+
+
+</body>
+</html>
