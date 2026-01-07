@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Data</h1>
+
+    <button onclick="LoadData()">Click</button>
+
+    <p id="status"></p>
+    <p id="data"></p>
+
+
+    <script>
+        function LoadData() {
+            const status = document.getElementById("status")
+            const data = document.getElementById("data")
+
+            status.innerText = "Loading..."
+            data.innerText = ""
+
+            fetch("https://jsonplaceholder.typicode.com/users/1")
+            .then(response =>{
+                if(!response.ok){
+                    throw new Error("Network Error")
+                }
+                return response.json();
+            })
+            .then(user =>{
+                data.innerHTML=`
+                Name: ${user.name} <br>
+                Email: ${user.email}`;
+
+                localStorage.setItem("userData",JSON.stringify(user.name))
+                status.innerText = "Loaded Successfully"
+            })
+            .catch(error => {
+                status.innerText = "Code has the error"
+                console.error(error)
+            })
+            
+        }
+    </script>
+</body>
+</html>

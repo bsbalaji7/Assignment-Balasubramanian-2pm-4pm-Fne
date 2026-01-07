@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <input type="text" placeholder="Enter your name" id="name">
+    <br><br>
+    <button onclick="saveName()">Save</button>
+    <button onclick="showName()">Show</button>
+
+
+    <script>
+        function saveName() {
+            const name = document.getElementById("name").value
+            localStorage.setItem("username",name)
+            alert("saved successfully")
+        }
+
+        function showName() {
+            const user = localStorage.getItem("username")
+            console.log("welcome",user);
+        }
+    </script>
+</body>
+</html>
